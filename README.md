@@ -22,7 +22,6 @@ This project centralizes every privileged access behind [Teleport OSS](https://g
 
 ## Architecture
 
-![Architecture](readme_assets/architecture.png)
 
 Administrators authenticate once against the **Teleport bastion** (`192.168.19.150`), which fronts Auth, Proxy, and Windows Desktop services. RBAC decides what each identity can reach; every session is recorded and shipped to Wazuh.
 
